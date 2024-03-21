@@ -19,10 +19,8 @@ permalink: /gallery/gallery/
         .gallery-item {
             margin: 5px;
             border: 1px solid #ccc;
-            width: 30%;
-            /* Adjust this depending on the number of images per row */
+            width: 30%; /* Adjust this depending on the number of images per row */
             text-align: left;
-            /* Aligning the text to the left */
         }
 
         .gallery-item:hover {
@@ -31,23 +29,30 @@ permalink: /gallery/gallery/
 
         .gallery-item img {
             width: 100%;
-            height: auto;
+            height: 200px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures that the aspect ratio is preserved while filling the element's entire content box */
         }
 
         .desc {
             padding: 15px;
             text-align: left;
-            /* Aligning the text to the left */
         }
 
         .title {
             font-weight: bold;
-            /* Makes the title bold */
         }
 
         .date {
             display: block;
-            /* Ensures the date is on a new line */
+        }
+
+        .gallery-item a, .gallery-item a:visited { /* Adds styles for links */
+            color: black; /* Changes text color to black */
+            text-decoration: none; /* Removes the underline */
+        }
+
+        .gallery-item a:hover { /* Adds a hover effect for links */
+            color: grey; /* Changes text color to grey on hover */
         }
     </style>
 </head>
@@ -56,57 +61,13 @@ permalink: /gallery/gallery/
     <h1 class="gallery-title">Gallery</h1>
     <div class="gallery-container">
 
-        <!-- Gallery item 1 -->
+        <!-- Gallery item 7 -->
         <div class="gallery-item">
-            <a href="/gallery_post/22_f1tenth.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/22_f1tenth_5.JPG" alt="Event">
+            <a href="/gallery_post/24_global_capstone.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/24_global_capstone_4.jpg" alt="Event">
                 <div class="desc">
-                    <span class="title">2022 F1Tenth Korea Championship</span><br>
-                    <span class="date">2022-12</span>
-                </div>
-            </a>
-        </div>
-
-        <!-- Gallery item 2 -->
-        <div class="gallery-item">
-            <a href="/gallery_post/23_mt.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/23_mt_2.jpg" alt="Event">
-                <div class="desc">
-                    <span class="title">연구실 MT</span><br>
-                    <span class="date">2023-05</span>
-                </div>
-            </a>
-        </div>
-
-        <!-- Gallery item 3 -->
-        <div class="gallery-item">
-            <a href="/gallery_post/23_icros.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/23_icros_1.jpg" alt="Event">
-                <div class="desc">
-                    <span class="title">ICROS F1Tenth 홍보</span><br>
-                    <span class="date">2023-06</span>
-                </div>
-            </a>
-        </div>
-
-        <!-- Gallery item 4 -->
-        <div class="gallery-item">
-            <a href="/gallery_post/23_pro_lee.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/banner_2.jpg" alt="Event">
-                <div class="desc">
-                    <span class="title">이인섭 교수님 연구실 방문</span><br>
-                    <span class="date">2023-07</span>
-                </div>
-            </a>
-        </div>       
-        
-        <!-- Gallery item 5 -->
-        <div class="gallery-item">
-            <a href="/gallery_post/23_bootcamp.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/23_bootcamp_2.jpg" alt="Event">
-                <div class="desc">
-                    <span class="title">2023 F1Tenth Bootcamp</span><br>
-                    <span class="date">2023-08</span>
+                    <span class="title">University of Pennsylvania 견학</span><br>
+                    <span class="date">2024-01</span>
                 </div>
             </a>
         </div>
@@ -122,16 +83,61 @@ permalink: /gallery/gallery/
             </a>
         </div>
 
-        <!-- Gallery item 7 -->
+        <!-- Gallery item 5 -->
         <div class="gallery-item">
-            <a href="/gallery_post/24_global_capstone.html"> <!-- Update this path to the URL of your HTML page -->
-                <img src="/post_image/24_global_capstone_4.jpg" alt="Event">
+            <a href="/gallery_post/23_bootcamp.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/23_bootcamp_2.jpg" alt="Event">
                 <div class="desc">
-                    <span class="title">University of Pennsylvania 견학</span><br>
-                    <span class="date">2024-01</span>
+                    <span class="title">2023 F1Tenth Bootcamp</span><br>
+                    <span class="date">2023-08</span>
                 </div>
             </a>
         </div>
+
+        <!-- Gallery item 4 -->
+        <div class="gallery-item">
+            <a href="/gallery_post/23_pro_lee.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/banner_2.jpg" alt="Event">
+                <div class="desc">
+                    <span class="title">이인섭 교수님 연구실 방문</span><br>
+                    <span class="date">2023-07</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Gallery item 3 -->
+        <div class="gallery-item">
+            <a href="/gallery_post/23_icros.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/23_icros_1.jpg" alt="Event">
+                <div class="desc">
+                    <span class="title">ICROS F1Tenth 홍보</span><br>
+                    <span class="date">2023-06</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Gallery item 2 -->
+        <div class="gallery-item">
+            <a href="/gallery_post/23_mt.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/23_mt_2.jpg" alt="Event">
+                <div class="desc">
+                    <span class="title">연구실 MT</span><br>
+                    <span class="date">2023-05</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Gallery item 1 -->
+        <div class="gallery-item">
+            <a href="/gallery_post/22_f1tenth.html"> <!-- Update this path to the URL of your HTML page -->
+                <img src="/post_image/22_f1tenth_5.JPG" alt="Event">
+                <div class="desc">
+                    <span class="title">2022 F1Tenth Korea Championship</span><br>
+                    <span class="date">2022-12</span>
+                </div>
+            </a>
+        </div>
+
     </div>
 
 </body>
