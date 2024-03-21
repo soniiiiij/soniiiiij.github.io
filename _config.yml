@@ -1,0 +1,119 @@
+# # # # # # # # # # # # #
+#   K i k o - p l u s   #
+# # # # # # # # # # # # #
+
+# Basic
+name:               "Cyber Safety Lab"
+
+author:
+  # facebook:         your-id
+  # youtubeUser:      your-id
+  # youtubeChannel:   your-id
+  # twitter:          your-id
+  github:           gnucslab
+  # stackoverflow:    your-id
+  # quora:            your-id
+  # linkedin:         your-id
+  # pinterest:        your-id
+  # googlePlus:       your-id
+  # instagram:        your-id
+  # reddit:           your-id
+  # medium:           your-id
+  # tumblr:           your-id
+  email:            jin.kim@gnu.ac.kr
+
+copyright:
+  year:             2024
+  name:             Cyber Safety Lab
+
+# Google-analytics
+google-analytics:
+  id:               ""
+
+# Disqus
+disqus:
+  id:               ""
+
+# URL
+url:                "https://soniiiiij.github.io" # the base hostname & protocol for your site
+#url:                "http://localhost:4000" # use this url when you develop
+baseurl:            "" # the subpath of your site, e.g. /blog
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Seoul
+permalink:          /:year-:month-:day/:title/
+
+# Pagination
+paginate:           7
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "About"
+    url:            "/"
+  - name:           "People"
+    url:            "/people"
+  - name:           "Member"
+    url:            "/member/members.md"
+  - name:           "Research"
+    url:            "/research"
+  - name:           "Publications"
+    url:            "/publication"
+  - name:           "Projects"
+    url:            "/projects"
+  # - name:           "News"
+  #   url:            "/news"
+  - name:           "Seminar"
+    url:            "/seminar"
+  - name:           "Tags"
+    url:            "/tags"
+  #- name:           "Events"
+  #  url:            "/events"
+
+# Sass
+sass:
+  load_paths:
+    - _sass
+    - _sass/bootstrap/scss
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+  -
+    scope:
+      path:         ""
+      type:         "authors"
+    values:
+      layout:       "author"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-admin
+
+exclude:            [vendor, Form, node_modules]
+
+future: true
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
